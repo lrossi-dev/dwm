@@ -5,22 +5,25 @@ static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Adobe Times:size=9" };
-static const char dmenufont[]       = "Adobe Times:size=9";
-static const char bg[]              = "#090909";
-static const char fg[]              = "#efefef";
-static const char color[]           = "#f99569";
+static const char *fonts[]          = { "FreeMono:size=9" };
+static const char dmenufont[]       = "FreeMono:size=9";
+static const char bg[]              = "#000000";
+static const char fg[]              = "#c1c1c1";
+static const char color[]           = "#a06666";
 static const char *colors[][3]      = {
-    /*               fg         bg         border   */
-	[SchemeNorm] = { fg,        bg,        bg },
-	[SchemeSel]  = { color,     bg,        fg },
-	[SchemeStatus]  = { fg,     bg,        "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
-	[SchemeTagsSel]  = { color, bg,        "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
-    [SchemeTagsNorm]  = { fg,   bg,        "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
-    [SchemeInfoSel]  = { fg,    bg,        "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
-    [SchemeInfoNorm]  = { fg,   bg,        "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
+    /*                    fg         bg         border   */
+	[SchemeNorm] =      { fg,        bg,        bg },
+	[SchemeSel]  =      { color,     bg,        fg },
+	[SchemeStatus]  =   { fg,        bg,        "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
+	[SchemeTagsSel]  =  { color,     bg,        "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
+    [SchemeTagsNorm]  = { fg,        bg,        "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
+    [SchemeInfoSel]  =  { fg,        bg,        "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
+    [SchemeInfoNorm]  = { fg,        bg,        "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 
+/* padding */
+static const int vertpadbar = 5;
+static const int horizpadbar = 0;
 /* gaps config */
 static const int gappih = 10;
 static const int gappiv = 10;

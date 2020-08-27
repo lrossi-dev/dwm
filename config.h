@@ -5,11 +5,11 @@ static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Adobe Times:size=9" };
-static const char dmenufont[]       = "Adobe Times:size=9";
-static const char bg[]              = "#090909";
-static const char fg[]              = "#efefef";
-static const char color[]           = "#f99569";
+static const char *fonts[]          = { "Inconsolata-g:size=9" };
+static const char dmenufont[]       = "Inconsolata-g:size=9";
+static const char bg[]              = "#282828";
+static const char fg[]              = "#a89984";
+static const char color[]           = "#689d6a";
 static const char *colors[][3]      = {
     /*               fg         bg         border   */
 	[SchemeNorm] = { fg,        bg,        bg },

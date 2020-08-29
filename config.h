@@ -102,6 +102,9 @@ static Key keys[] = {
     { MODKEY,                       XK_F3,     spawn,          SHCMD("pamixer --allow-boost -i 3; kill -44 $(pidof dwmblocks)") },
     { 0,              XF86XK_AudioLowerVolume, spawn,          SHCMD("pamixer --allow-boost -d 3; kill -44 $(pidof dwmblocks)") },
     { MODKEY,                       XK_F2,     spawn,          SHCMD("pamixer --allow-boost -d 3; kill -44 $(pidof dwmblocks)") },
+    { 0,                            XK_Print,  spawn,          SHCMD("scrot ~/pix/$(date '+%Y-%m-%d_%H:%M:%S').png") },
+    { ShiftMask,                    XK_Print,  spawn,          SHCMD("scrot -s ~/pix/$(date '+%Y-%m-%d_%H:%M:%S').png") },
+    /* Tag controls                                                              */
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)

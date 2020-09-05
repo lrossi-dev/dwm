@@ -6,11 +6,11 @@ static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Inconsolata-g:size=9" };
-static const char dmenufont[]       = "Inconsolata-g:size=9";
-static const char bg[]              = "#282828";
-static const char fg[]              = "#a89984";
-static const char color[]           = "#689d6a";
+static const char *fonts[]          = { "DejaVu Sans:size=10" };
+static const char dmenufont[]       = "DejaVu Sans:size=10";
+static const char bg[]              = "#282936";
+static const char fg[]              = "#e9e9f4";
+static const char color[]           = "#ea51b2";
 static const char *colors[][3]      = {
     /*               fg         bg         border   */
 	[SchemeNorm] = { fg,        bg,        bg },
@@ -27,7 +27,7 @@ static const int gappih = 10;
 static const int gappiv = 10;
 static const int gappov = 10;
 static const int gappoh = 10;
-static const int smartgaps = 0;
+static const int smartgaps = 1;
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };

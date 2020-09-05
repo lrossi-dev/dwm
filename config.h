@@ -28,6 +28,7 @@ static const int gappiv = 10;
 static const int gappov = 10;
 static const int gappoh = 10;
 static const int smartgaps = 1;
+static const int smartborders = 1;
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };

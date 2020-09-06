@@ -14,7 +14,7 @@ static const char color[]           = "#ea51b2";
 static const char *colors[][3]      = {
     /*               fg         bg         border   */
 	[SchemeNorm] = { fg,        bg,        bg },
-	[SchemeSel]  = { color,     bg,        fg },
+	[SchemeSel]  = { color,     bg,        color },
 	[SchemeStatus]  = { fg,     bg,        "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
 	[SchemeTagsSel]  = { color, bg,        "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
     [SchemeTagsNorm]  = { fg,   bg,        "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
@@ -118,6 +118,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_e,      quit,           {0} },
+    { MODKEY,                       XK_x,      spawn,          SHCMD("slock") },
     { MODKEY|ShiftMask,             XK_x,      spawn,          SHCMD("shutdown -h now") },
     { MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("reboot") },
 };

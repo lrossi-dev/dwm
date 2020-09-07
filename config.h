@@ -31,6 +31,10 @@ static const int gappoh = 10;
 static const int smartgaps = 0;
 static const int smartborders = 1;
 
+/* bar padding */
+static const int vertpad = 5;
+static const int sidepad = 8;
+
 /* tagging */
 static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 

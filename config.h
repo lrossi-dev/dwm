@@ -2,23 +2,24 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "DejaVu Sans:size=10" };
+static const char *fonts[]          = { "DejaVu Sans:size=10", "Font Awesome 5 Free:size=9:antialias=true" };
 static const char dmenufont[]       = "DejaVu Sans:size=10";
 static const char bg[]              = "#282936";
 static const char fg[]              = "#e9e9f4";
 static const char color[]           = "#ea51b2";
+static const char alt_color[]       = "#b45bcf";
 static const char *colors[][3]      = {
     /*               fg         bg         border   */
 	[SchemeNorm] = { fg,        bg,        bg },
-	[SchemeSel]  = { color,     bg,        color },
+	[SchemeSel]  = { alt_color, bg,        alt_color },
 	[SchemeStatus]  = { fg,     bg,        "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
 	[SchemeTagsSel]  = { color, bg,        "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
     [SchemeTagsNorm]  = { fg,   bg,        "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
-    [SchemeInfoSel]  = { fg,    bg,        "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
+    [SchemeInfoSel]  = { alt_color, bg,    "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
     [SchemeInfoNorm]  = { fg,   bg,        "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 
@@ -27,11 +28,11 @@ static const int gappih = 10;
 static const int gappiv = 10;
 static const int gappov = 10;
 static const int gappoh = 10;
-static const int smartgaps = 1;
+static const int smartgaps = 0;
 static const int smartborders = 1;
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
